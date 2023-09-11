@@ -23,7 +23,7 @@ if len(img.shape) > 2:
     for i in range(h):
         for j in range(l):
                 for k in range(c):
-                    img_out[i, j, k] = np.clip(alpha * img[i, j, k], 0, 255)
+                    img_out[i, j, k] = np.clip(alpha * img[i, j, k], 0, 255) # np.clip untuk membatasi nilai array
 else:
     h = img.shape[0] 
     l = img.shape[1]
